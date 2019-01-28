@@ -1,0 +1,763 @@
+/*//////////////////////////////////////////////////////////////
+ DEFINITION DES POLICES PERSONNALISES
+ //////////////////////////////////////////////////////////////*/
+@font-face {
+    font-family: 'windsongregular';
+    src: url('polices/Windsong-webfont.eot');
+    src: url('polices/Windsong-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/Windsong-webfont.woff2') format('woff2'),
+         url('polices/Windsong-webfont.woff') format('woff'),
+         url('polices/Windsong-webfont.ttf') format('truetype'),
+         url('polices/Windsong-webfont.svg#windsongregular') format('svg');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'capture_itregular';
+    src: url('polices/Capture_it-webfont.eot');
+    src: url('polices/Capture_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/Capture_it-webfont.woff2') format('woff2'),
+         url('polices/Capture_it-webfont.woff') format('woff'),
+         url('polices/Capture_it-webfont.ttf') format('truetype'),
+         url('polices/Capture_it-webfont.svg#capture_itregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'seasideresortnfregular';
+    src: url('polices/SEASRN__-webfont.eot');
+    src: url('polices/SEASRN__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/SEASRN__-webfont.woff2') format('woff2'),
+         url('polices/SEASRN__-webfont.woff') format('woff'),
+         url('polices/SEASRN__-webfont.ttf') format('truetype'),
+         url('polices/SEASRN__-webfont.svg#seasideresortnfregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*//////////////////////////////////////////////////////////////
+ EN TETE ET CORPS PRINCIPAL DU SITE
+ //////////////////////////////////////////////////////////////*/
+
+header
+{
+    width:100%;
+	  opacity:0.9;
+    height: 30%;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+}
+
+header h1
+{ 	
+	font-size: 3.4em;
+	color: #4dc3ff;
+  margin-top: 20px;
+	font-family: 'seasideresortnfregular','Trebuchet MS', serif;
+	 
+}
+
+header h2
+{ 	
+	font-size: 2.6em;
+	font-family: 'windsongregular', 'Trebuchet MS', serif; 
+  color: white;
+	font-weight: normal;
+	margin-top: -30px;	
+}
+
+header img
+{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+
+}
+
+body
+{
+    background-color: #1a1a1a;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: white;
+
+}
+
+
+#recherche
+{
+  margin-left: 75%;
+  margin-top: -60px;
+  margin-bottom:20px;
+  display: flex;
+}
+
+.bouton_recherche
+{
+  background: url('images/recherche.png');
+  background-size: 100% 100%;
+}
+
+.bouton_panier
+{
+  background: url('images/panier.png');
+  background-size: 100% 100%;
+  margin-left: 25px;
+  width: 60px;
+  height: 60px;
+  margin-top: -20px;
+}
+/*//////////////////////////////////////////////////////////////
+PIED DE PAGE
+ //////////////////////////////////////////////////////////////*/
+
+footer
+{
+  text-align: center;
+  font-family:'Trebuchet MS';
+  color: white;
+  margin-top: 35px;
+  font-size: 1em;
+}
+
+
+/*//////////////////////////////////////////////////////////////
+MENU DE NAVIGATION
+ //////////////////////////////////////////////////////////////*/
+
+nav
+{
+  height: 35px;
+  font-family:'capture_itregular', Trebuchet MS, sherif;
+  background-color: #4dc3ff;
+  opacity: 0.9;
+  width: 99%;
+  margin:auto;
+  margin-bottom: 2%;
+}
+nav ul
+{
+    list-style-type: none;
+    display:flex;
+    text-align: center;
+}
+nav li
+{ 
+  width: 33%;
+}
+nav a
+{
+    font-size: 1.8em;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover
+{
+    color: white;
+}
+nav ul ul 
+{
+  display: none;
+  position: relative;
+  padding-bottom: 15px;
+  padding-left: 9px;
+
+}
+nav li ul
+{
+  position:absolute;
+}
+li:hover ul li
+{
+  float: none;
+}
+nav ul li:hover ul
+{
+  display: block;
+  position: relative;
+  padding-top: 15px;
+  background-color: white;
+  font-size:0.7em;
+  opacity:0.8;
+  width:40%;
+  margin-left: 35%;
+}
+nav ul li:hover ul li
+{
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+}
+nav ul li ul a:hover
+{
+  color:#4dc3ff;
+}
+/*//////////////////////////////////////////////////////////////
+PAGE 1 : ACCUEIL
+ //////////////////////////////////////////////////////////////*/
+
+
+#bloc_accueil
+{
+  margin-top: 50px;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+
+}
+
+
+#bloc_accueil h1 
+{
+  font-family:'capture_itregular', Trebuchet MS, sherif;
+  font-size: 2em;
+  justify-content: center;
+  text-align: center;
+  color: #80c1ff;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#bloc_accueil article
+{
+  width: 80%;
+  display: flex;
+  text-align: center;
+  font-size: 1.2em;
+  margin: auto;
+}
+#bloc_accueil p
+{
+  width: 40%;
+  margin-left:10%;
+  margin-right: 10%;
+}
+
+#bloc_accueil article img
+{
+  width:20%;
+  height: 20%;
+}
+/*SOLDES*/
+
+#bloc_accueil h6
+{
+  font-size: 1em;
+}
+
+#bloc_accueil aside 
+{ 
+  margin-top: 8%;
+  width: 40%;
+  margin-left: 30%;
+  text-align: center;
+  margin-bottom: 8%;
+  font-size: 1.5em;
+  background-color: black;
+  color: white;
+  padding: 1%;
+    box-shadow: 8px 8px 0px #80c1ff;
+}
+/*VIDEO*/
+
+#video_acc
+{
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  font-style: italic;
+  font-size: 2em;
+}
+
+video
+{
+  background-color:white;
+  margin-left: 15%;
+  display: flex;
+}
+
+@media screen and (max-width: 1280px)
+
+{
+  #bloc_accueil article
+{
+  width: 90%;
+}
+  #bloc_accueil article img
+  {
+    width: 25%;
+    height: 25%;
+  }
+  #bloc_accueil p
+{
+  width: 50%;
+  margin-left:5%;
+  margin-right: 5%;
+}
+
+}
+
+/*//////////////////////////////////////////////////////////////
+PAGE 2 : PRODUIT
+ //////////////////////////////////////////////////////////////*/
+
+
+#bloc_produit h1 
+{
+  font-family:'capture_itregular', Trebuchet MS, sherif;
+  font-size: 2em;
+  justify-content: center;
+  text-align: center;
+  color: #80c1ff;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#bloc_produit
+{
+  width: 80%;
+  margin:auto;
+}
+
+#bloc_produit p
+{
+  text-align: center;
+}
+
+
+#bloc_produit img
+{
+  width: 20%;
+  height:20%;
+  margin-right: 2%;
+  border-radius: 10px;
+}
+
+#bloc_produit article
+{
+  width:70%;
+  background-color: #f2f2f2;
+  padding-left: 3%;
+  color: black;
+}
+
+#bloc_produit section
+{
+  display: flex;
+  margin-top: 20px;
+}
+
+#bloc_produit h2
+{
+font-family: 'capture_itregular',Trebuchet MS, sherif;
+text-decoration: underline;
+color: #1ab2ff;
+font-size:1.5em;
+}
+
+#bloc_produit h3
+{
+  padding-left: 5%;
+  font-style: italic;
+  font-size:1em;
+}
+
+#bloc_produit aside
+{
+  font-size:1.7em;
+  padding: 1%;
+  margin-top: 30px;
+  margin-left: 10%;
+  background-color: #80d4ff;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+/*BOUTON*/
+
+.bouton_ajouter
+{
+  width: 20%;
+  margin-top: 1%;
+  font-family: 'Trebuchet MS';
+  font-size:1em;
+  color: white;
+  background-color: black;
+  margin-left: 52%;
+  height: 30px;
+}
+
+.bouton_voir
+{
+  display: flex;
+  width: 20%;
+  margin-top:-30px;
+  font-family: 'Trebuchet MS';
+  font-size:1em;
+  color: white;
+  background-color: black;
+  height: 30px;
+  margin-left: 75%;
+  justify-content: center;
+
+
+}
+
+
+@media screen and (max-width: 1280px)
+
+{
+  #bloc_produit img
+{
+  width: 30%;
+  height:30%;
+  margin-right: 2%;
+  border-radius: 10px;
+}
+
+}
+/*//////////////////////////////////////////////////////////////
+PAGE 3 : NOUS
+ //////////////////////////////////////////////////////////////*/
+
+#bloc_nous h1 
+{
+  font-family:'capture_itregular', Trebuchet MS, sherif;
+  font-size: 2em;
+  justify-content: center;
+  text-align: center;
+  color: #80c1ff;
+  width: 100%;
+  margin-top: 50px;
+}
+#bloc_nous h2 
+{
+  font-family:'capture_itregular', Trebuchet MS, sherif;
+  font-size: 1.5em;
+  justify-content: center;
+  text-align: center;
+  color: #80c1ff;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#bloc_nous h3
+{
+  font-family:Trebuchet MS, sherif;
+  font-size: 1.2em;
+  justify-content: center;
+  text-align: center;
+  color: #4dc3ff;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#bloc_nous section
+{
+  width: 80%;
+  display: flex;
+  margin:auto;
+}
+
+#bloc_nous article
+{
+  text-align:justify;
+  width: 48%;
+  margin-left: 2%;
+  height: 60%;
+} 
+/*DETAILS*/
+
+#details p
+{
+  text-align: center;
+  font-size:1.5em;
+  color: #80c1ff;
+}
+#details a
+{
+  font-size: 1.8em;
+  color: #4dc3ff;
+}
+#details a:hover
+{
+  color: white;
+}
+
+#details img
+{ 
+  margin: auto;
+  display: flex;
+
+}
+
+/*//////////////////////////////////////////////////////////////
+PAGE TECHNIQUE DRONE PRO
+ //////////////////////////////////////////////////////////////*/
+ 
+ .fiche_technique
+ {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.fiche_technique h1
+{
+  font-family:'capture_itregular', Trebuchet MS, sherif;
+  font-size: 2em;
+  justify-content: center;
+  text-align: center;
+  color: #80c1ff;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.fiche_technique h2
+{
+  font-family:'capture_itregular', Trebuchet MS, sherif;
+  font-size: 1.5em;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.fiche_technique section
+{
+  display: flex;
+}
+.fiche_technique article
+{
+  width: 50%;
+  background-color: white;
+  color:black;
+  padding: 5%;
+  text-align: justify;
+}
+.fiche_technique aside
+{
+  width: 40%;
+  margin-right:5%;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px black;
+}
+.fiche_technique li
+{
+    list-style-type: none;
+}
+.fiche_technique ul
+{
+    margin-top: -7%;
+}
+
+@media screen and (max-width: 1280px)
+
+{
+  .fiche_technique aside img
+    {
+      width: 40%;
+      height:40%;
+    }
+}
+
+
+.add_panier
+{
+  margin-top: 1%;
+  font-family: 'Trebuchet MS';
+  font-size:1em;
+  color: black;
+  background-color: #80c1ff;
+  margin-bottom: 1%;
+  height: 30px;
+}
+
+/*AVIS*/
+.avis
+{
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  box-shadow: 5px 5px #80c1ff;
+  color: black;
+  padding: 1%;
+}
+
+.avis p
+{
+  font-size: 
+}
+
+.avis h3
+{
+  font-family:'capture_itregular', Trebuchet MS, sherif;
+  font-size: 1.5em;
+  text-align: left;
+  color: #80c1ff;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.commentaire
+{
+  background-color: #80c1ff;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+
+/*//////////////////////////////////////////////////////////////
+PAGE PANIER
+ //////////////////////////////////////////////////////////////*/
+
+ #bloc_paniervide h6
+ {
+  width: 100%;
+  font-size: 1.5em;
+  text-align: center;
+ }
+.retour
+{
+  font-family: 'Trebuchet MS';
+  font-size:1em;
+  color: black;
+  background-color: #80c1ff;
+  height: 30px;
+  font-weight: bold;
+  width:20%;
+  margin-left:40%;
+  margin-top: 1%;
+}
+
+#bloc_panierplein
+{
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+/*ARTICLES*/
+
+#article_panier
+{
+  width:60%;
+  background-color: white;
+}
+
+#bloc_panierplein h1
+{
+  font-family:'capture_itregular', Trebuchet MS, sherif;
+  font-size: 2em;
+  justify-content: left;
+  text-align: left;
+  color: #80c1ff;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 5%;
+}
+
+#article_panier article
+{
+  width:80%;
+  margin-left: 10%;
+  background-color: #b3ffff;
+  display:flex;
+  margin-bottom: 2%;
+}
+
+#article_panier img
+{
+  width:30%;
+  height: 30%;
+  border:5px solid black;
+}
+
+#article_panier h2
+{
+  width:50%;
+  color:black;
+  margin-left: 2%;
+}
+#article_panier h3
+{
+    width:20%;
+    color: black;
+    font-weight: bolder;
+}
+
+/*PAIEMENT */
+#paiement
+{
+  width:35%;
+  margin-left: 5%;
+  background-color: #80c1ff;
+}
+
+#code
+{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 4%;
+  border: 2px black;
+}
+#appli_code
+{
+  font-family: 'Trebuchet MS';
+  font-size:1em;
+  color: black;
+  background-color: white;
+  height: 30px;
+  font-weight: bold;
+  width:60%;
+  margin-left:20%;
+  margin-top: 1%;
+}
+
+#paiement article
+{
+  width: 80%;
+  margin-left: 10%;
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+
+/*//////////////////////////////////////////////////////////////
+DETAILS TECHNIQUES
+ //////////////////////////////////////////////////////////////*/
+
+
+#detailtechnique h1 
+{
+  font-family:'capture_itregular', Trebuchet MS, sherif;
+  font-size: 2em;
+  justify-content: center;
+  text-align: center;
+  color: #80c1ff;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#detailtechnique
+{
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+  font-size: 1.2em;
+}
+

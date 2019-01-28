@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="style.css"/>
+		<title> DRONE TECH </title>
+
+	</head>
+
+	<body>
+  
+        <header>  
+                    <img src="images/logo.png">
+                    <h1>DRONE TECH </h1>    
+                    <h2>La qualité à la française</h2>
+                    <div id="recherche">
+                            <form method="post" action="2-produit.html#bloc_produit">
+                            <input name="barre" id="barre" type="text" placeholder="Une petite recherche ? "/>
+                            <input class="bouton_recherche" type="submit" value=" " />
+                            </form>
+                            <form method="post" action="Panierplein.html">
+                            <input class="bouton_panier" type="submit"value=" " />
+                            </form>
+                     </div>
+                    
+        </header>
+
+             <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="2-Produit.html">Produits</a>
+                            <ul>
+                                <li><a href="p1.html">Mini drone  </li>
+                                <li><a href="p2.html">Drone camera </li>
+                                <li><a href="p3.html">Drone pro </li>
+                                <li><a href="p4.html">Drone de course</li>
+                            </ul></li>
+                        <li><a href="3-Nous.html">Qui sommes nous ?</a></li>
+                    </ul>
+                </nav> 
+		<div id="bloc_panierplein">
+            <section id="article_panier">
+         <h1>Votre panier</h1>
+            <article>
+                <img src="images/drone_course.jpg" alt="Image d'un drone de course">
+                <h2>Drone de course</h2>
+                <h3>349.99€</h3>
+            </article>
+            <article>
+                <img src="images/drone_mini.jpg" alt="Image d'un mini drone">
+                <h2>Mini Drone </h2>
+                <h3>49.99€</h3>
+            </article>
+
+            </section>
+
+            <section id="paiement">
+                  <form method="post">
+                  <input name="code" id="code" type="text" placeholder="Code promo"/>
+                  </form>
+                  <form method="post">
+                 <input id="appli_code" type="submit"value="Appliquer le code promo" />
+                </form>
+            <article>
+                <h4>Sous total : 399.98€</h4>
+                <h5>Expedition</h5>
+                <input type="radio" name="parite" /> <label for="pair">Point relais 5€</label><br />
+                <input type="radio" name="parite" /> <label for="impair">Colissimo 4€</label><br />
+                <h4>Total : 403.98€</h4>
+            </article>
+                <form method="post">
+                 <input id="appli_code" type="submit"value="Valider la commande" />
+                </form>
+            </section>
+
+
+
+        </div>
+        <form method="post" action="2-Produit.html">
+        <input class="retour" type="submit"value="Retour aux produits" />
+        </form>
+
+
+            <footer>
+               <p> © Copyright 2018-2019 Henini-Gauthier- Tous droits réservés </p>
+            </footer> 
+	</body>
+    </html>
